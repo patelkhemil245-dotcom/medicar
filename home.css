@@ -1,0 +1,387 @@
+/* ================= GLOBAL RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* ================= NAVIGATION ================= */
+.nevigetion{
+    width:100%;
+    padding:20px 40px;
+}
+
+.logo{
+    float:left;
+    margin-top:10px;
+}
+.logo h1{
+    color:#33cf81;
+    font-size:30px;
+}
+.logo p{
+    color:#33cf81;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+.contact{
+    float:right;
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin-top:20px;
+}
+.contact p{
+    font-size:14px;
+}
+.contact button{
+    padding:6px 18px;
+    background:#33cf81;
+    color:#fff;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.nevigetion::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.source{
+    background:#33cf81;
+    margin-top:30px;
+    margin-left:300px;
+    padding:12px;
+    text-align:center;
+    border-radius:10px;
+}
+.source a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 18px;
+    font-weight:500;
+}
+
+/* ================= HEADER ================= */
+.hedder{
+    position:relative;
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    padding:60px;
+    overflow:hidden;
+}
+
+.bgimage img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:blur(6px);
+    z-index:-1;
+}
+
+/* Doctor image perfect */
+.main img{
+    width:360px;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 0 12px rgba(0,0,0,0.4));
+}
+
+.hed{
+    max-width:500px;
+}
+.hed h1{
+    color:#33cf81;
+    font-size:42px;
+    line-height:1.2;
+}
+.hed p{
+    font-size:22px;
+    color:#333;
+}
+
+/* ================= FEATURE BOX ================= */
+.box{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:0;
+    margin-top:-60px;
+    flex-wrap:wrap;
+}
+
+.box div{
+    width:25%;
+    min-height:100px;
+    background:#33cf81;
+    color:#fff;
+    padding:25px;
+    text-align:center;
+    border:2px solid #fff;
+}
+
+/* ================= TREATMENTS ================= */
+.treatments{
+    width:100%;
+    padding:60px 40px;
+}
+
+.heding{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.heding h1{
+    font-size:40px;
+    color:#0b6b3a;
+}
+.heding p{
+    font-size:18px;
+    color:#555;
+}
+
+.boxa{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.boxa > div{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.boxa > div:hover{
+    transform:translateY(-10px);
+}
+
+.boxa b{
+    display:block;
+    font-size:18px;
+    color:#0b6b3a;
+    margin-bottom:10px;
+}
+.boxa p{
+    font-size:15px;
+    color:#555;
+    line-height:1.6;
+}
+
+/* ================= BOOKING ================= */
+.booking{
+    position:relative;
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 80px;
+    overflow:hidden;
+}
+
+.booking .bgimage img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    filter:blur(6px);
+    z-index:-1;
+}
+
+.boxb{
+    width:45%;
+    background:rgba(255,255,255,0.95);
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+}
+
+.boxc b{
+    font-size:30px;
+    color:#0b6b3a;
+}
+.boxc p{
+    margin-top:8px;
+    color:#555;
+}
+
+.textbox{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin:25px 0;
+}
+
+.textbox input{
+    padding:12px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+/* Booking image perfect */
+.booking .img img{
+    width:380px;
+    height:auto;
+    object-fit:contain;
+    filter:drop-shadow(0 0 15px rgba(0,0,0,0.4));
+}
+
+/* ================= TEAM ================= */
+.main{
+    background:#fff;
+    padding:60px 40px;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.doctors{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.dinfo{
+    width:230px;
+    background:#fff;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.dinfo:hover{
+    transform:translateY(-10px);
+}
+
+.dimg{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+/* ================= TESTIMONIAL ================= */
+.testimonial{
+    background:#38c5b8;
+    color:#0e0e0e;
+    padding:60px 40px;
+}
+
+.t1{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.patients{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.patient-card{
+    background:#fff;
+    width:380px;
+    padding:25px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,0.25);
+}
+
+.pimg{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+
+/* ================= BLOG ================= */
+.blogs{
+    text-align:center;
+    padding:50px;
+}
+
+.blog-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.blog-card{
+    display:flex;
+    width:450px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.blog-card img{
+    width:200px;
+    height:100%;
+    object-fit:cover;
+}
+
+.blog-content{
+    padding:15px;
+    text-align:left;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#333;
+    color:aliceblue;
+    padding:40px 0;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+}
+
+.footer-box{
+    width:220px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:1024px){
+    .box div{width:48%;}
+    .boxa{grid-template-columns:repeat(2,1fr);}
+    .booking{flex-direction:column;}
+    .boxb{width:100%;}
+    .booking .img img{width:300px;margin-top:20px;}
+}
+
+@media(max-width:768px){
+    .source{margin-left:0;}
+    .source a{display:block;margin:10px 0;}
+    .box div{width:100%;}
+    .boxa{grid-template-columns:1fr;}
+    .textbox{grid-template-columns:1fr;}
+    .main img,.booking .img img{width:220px;}
+}
